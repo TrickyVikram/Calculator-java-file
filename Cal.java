@@ -1,13 +1,10 @@
-package calculator;
-
-// hello 
-// Changes  the code in the overloading method
 import java.util.Scanner;
+// hello
 
-public class Cal {
+class Cal {
 
-    int nu1;
-    int nu2;
+    static int nu1;
+    static int nu2;
     char ch;
     char repeat;
     static char o;
@@ -15,24 +12,25 @@ public class Cal {
     static char l = 'Y';
     static char k = 'y';
 
-    public void add() {
-        System.out.println("Your values is : " + (nu1 + nu2));
+    static int met(int a, int b) {
+     return (a + b);
     }
 
-    public void sub() {
-        System.out.println("Your values is : " + (nu1 - nu2));
+    static int met(int a, int b, int f) {
+        
+        return (a - b);
+    }
+   
+    static int met(int a, int b, int g, int j) {
+        return (a * b);
     }
 
-    public void mul() {
-        System.out.println("Your values is : " + nu1 * nu2);
+    static int met(int a, int b, int g, int j, int l) {
+        return (a / b);
     }
 
-    public void div() {
-        System.out.println("Your values is : " + nu1 / nu2);
-    }
-
-    public void rem() {
-        System.out.println("Your values is : " + nu1 % nu2);
+    static int met(int a, int b, int g, int j, int l, int k) {
+        return (a % b);
     }
 
     public static void main(String[] args) {
@@ -53,20 +51,20 @@ public class Cal {
             switch (c) {
 
                 case '+':
-                    v.add();
+                    System.out.println(  " Your values is "+   met(nu1, nu2));
                     break;
                 case '-':
-                    v.sub();
+                    System.out.println(  " Your values is "+  met(nu1, nu2, nu1));
                     break;
                 case '*':
-                    v.mul();
+                    System.out.println(  " Your values is "+   met(nu1, nu2, nu2, nu2));
 
                     break;
                 case '/':
-                    v.div();
+                    System.out.println(   " Your values is "+  met(nu1, nu2, nu2, nu2, nu2));
                     break;
                 case '%':
-                    v.rem();
+                    System.out.println(  " Your values is "+  met(nu1, nu2, nu2, nu2, nu2, nu2));
 
                     break;
 
