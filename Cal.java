@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// hello
+// just checking the java file
 
 class Cal {
 
